@@ -11,7 +11,6 @@ const getMovie = async (movieID) => {
 async function page({ params }) {
   const { id } = params;
 
-  //   const movies = getMovie(id);
   const res = await fetch(
     `https://api.themoviedb.org/3/movie/${id}?language=en-US&api_key=${API_KEY}`
   );
@@ -19,7 +18,6 @@ async function page({ params }) {
 
   return (
     <div className="w-full">
-      <h1>{id}</h1>
       <div className="p-4 md:top-8 flex flex-col md:flex-row items-center justify-center content-center max-w-6xl mx-auto md:space-x-6">
         <Image
           width={285}

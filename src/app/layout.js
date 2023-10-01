@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import ThemeCtx from "./ThemeCtx";
 import Navbar from "@/components/Navbar";
+import SearchBox from "@/components/SearchBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeCtx>
           <Header />
           <Navbar />
+          <SearchBox />
           {children}
         </ThemeCtx>
       </body>

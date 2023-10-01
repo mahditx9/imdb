@@ -6,6 +6,7 @@ const Card = ({
     id,
     overview,
     original_title,
+    name,
     release_date,
     vote_count,
     backdrop_path,
@@ -32,7 +33,7 @@ const Card = ({
           <p className="overflow-hidden text-ellipsis">
             {overview.slice(0, 35).trim()}...
           </p>
-          <h2 className="font-bold mt-2">{original_title}</h2>
+          <h2 className="font-bold mt-2">{original_title || name}</h2>
           <div className="w-full flex justify-between items-center mt-5">
             <span>{release_date || "N/A"}</span>
             <div className="flex items-center hover:text-amber-500">
