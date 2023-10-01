@@ -8,7 +8,7 @@ function Header() {
     <div className="flex items-center justify-between py-2 px-3 max-w-6xl sm:mx-auto">
       <div className="flex items-center gap-5">
         <MenuItem title="Home" path="/" Icon={AiFillHome} />
-        <MenuItem title="About" path="/" Icon={FcAbout} />
+        <MenuItem title="About" path="/about" Icon={FcAbout} />
       </div>
       <div className="flex items-center gap-5 text-xl">
         <DarkMode />
